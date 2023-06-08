@@ -1,0 +1,104 @@
+
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+
+
+.header{
+  height: 140px;
+  border-bottom: 1px solid #fff;
+}
+
+.menu{
+  width: 393px;
+  display: flex;
+  align-items: center;
+  &__inner{
+    padding-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__list{
+    width: 288px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__item{
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+  &__item-link{
+    color: $default;
+  }
+  &__shopping-cart{
+    margin-left: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+  height: 408px;
+  background-color: $default;
+  color: $bg;
+  font-size: 18px;
+  line-height: 22px;
+  a{
+    color: inherit;
+    display: block;
+  }
+  &__inner{
+    padding-top: 87px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  &__contacts{
+    width: 350px;
+    a{
+      padding-top: 20px;
+    }
+  }
+  &__social-list{
+    display: flex;
+    align-items: center;   
+  }
+  ul.footer__social-list{
+    padding-bottom: 11px;
+  }
+  &__social{
+    width: 350px;
+    padding-left: 62px;
+  }
+  &__social-item{
+    padding-right: 40px;
+  }
+  &__privacy-text{
+    padding-top: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+@import 'media';

@@ -1,0 +1,38 @@
+$default: #705A66;
+$bg: #F5F7F8;
+$btn-bg: #F5EEE0;
+
+
+
+%montserrat-300 {
+  font-family: 'Montserrat-Light', sans-serif;
+  font-weight: 300;
+}
+%montserrat-700 {
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-weight: 700;
+}
+%jeff-400 {
+  font-family: 'Jeff Script';
+  font-weight: 400;
+}
+%moniqa-900 {
+  font-family: 'Moniqa-BlackDisplay';
+  font-weight: 900;
+}
+
+%btn {
+  color: $default;
+  text-transform: uppercase;
+  padding: 19px;
+  background-color: $btn-bg;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+%title{
+  @extend %moniqa-900;
+  font-size: 100px;
+  line-height: 104px;
+  color: $default;
+}

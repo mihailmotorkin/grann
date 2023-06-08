@@ -36,15 +36,15 @@ function fonts() {
 }
 
 function images() {
-  return src(['app/images/src/*.*', '!app/images/src/*.svg'])
+  return src(['app/images/src/**/*.*', '!app/images/src/**/*.svg'])
   .pipe(newer('app/images'))
   .pipe(avif({ quality : 50 }))
 
-  .pipe(src('app/images/src/*.*'))
+  .pipe(src('app/images/src/**/*.*'))
   .pipe(newer('app/images'))
   .pipe(webp())
 
-  .pipe(src('app/images/src/*.*'))
+  .pipe(src('app/images/src/**/*.*'))
   .pipe(newer('app/images'))
   .pipe(imagemin())
 
@@ -74,7 +74,9 @@ function styles() {
 }
 
 function scripts() {
-  return src('app/js/main.js')
+  return src([
+    'app/js/main.js'
+  ])
   .pipe(concat('main.min.js'))
   .pipe(uglify())
   .pipe(dest('app/js'))
@@ -87,7 +89,7 @@ function watching() {
             baseDir: "app/"
         }
   });
-  watch(['app/scss/style.scss'], styles)
+  watch(['app/scss/*.scss'], styles)
   watch(['app/images/src'], images)
   watch(['app/js/main.js'], scripts)
   watch(['app/components/*', 'app/pages/*'], pages)
@@ -103,12 +105,14 @@ function building() {
   return src([
     'app/css/style.min.css',
     '!app/images/**/*.html',
-    'app/images/*.*',
+    'app/images/**/*.*',
+    '!app/images/src/**',
+    '!app/images/stack/**',
     '!app/images/*.svg',
     'app/images/sprite.svg',
     'app/fonts/*.*',
     'app/js/main.min.js',
-    'app/**/*.html'
+    'app/*.html'
   ], {base: 'app'})
   .pipe(dest('dist'))
 }
@@ -126,4 +130,4 @@ exports.watching = watching;
 
 
 exports.build = series(cleanDist, building);
-exports.default = parallel(styles, images, scripts, pages, watching);
+exports.default = parallel(styles, images, fonts, scripts, pages, watching);
