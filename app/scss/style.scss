@@ -6,8 +6,10 @@
 
 
 .header{
-  height: 140px;
-  border-bottom: 1px solid #fff;
+  &-top{
+    height: 140px;
+    border-bottom: 1px solid #fff;
+  }
 }
 
 .menu{
@@ -41,9 +43,123 @@
 
 
 
+.header-bot{
+  height: 760px;
+  background-image: url('../images/header_bg.png');
+  background-size: 850px 523px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  &__title{
+    @extend %moniqa-900;
+    font-size: 226px;
+    line-height: 236px; 
+    text-transform: uppercase;
+    padding-top: 85px;
+    padding-left: 515px;
+    position: relative;
+    z-index: -1;
+  }
+  &__subtitle{
+    @extend %montserrat-300;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 8px;
+    right: 232px;
+  }
+  &__social{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 223px;
+  }
+  &__btn{
+    @extend %btn;
+    padding: 19px 97px;
+    display: block;
+  }
+  &__social-list{
+    display: flex;
+    flex-direction: column;
+  }
+  &__social-item{
+   margin-bottom: 20px;
+  }
+}
 
 
-
+.assortment{
+  margin-top: 238px;
+  height: 1000px;
+  //удалить после определения высоты блока//
+  &__box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 47px;
+  }
+  &__item{
+    height: 253px;
+    width: 100%;
+    border-radius: 127px;
+    position: relative;
+    &:nth-child(1){
+      background-image: url('../images/cake.jpg');
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    &:nth-child(2){
+      background-image: url('../images/shu.jpg');
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    &:nth-child(3){
+      background-image: url('../images/cupcake.jpg');
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    &:nth-child(4){
+      background-image: url('../images/pizza.jpg');
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+  &__btn-inner{
+    position: absolute;
+    left: 164.5px;
+    bottom: -17px;
+  }
+  &__btn{
+    width: 276px;
+    @extend %btn;
+    padding: 19px;
+    position: relative;
+    &::after{
+      position: absolute;
+      content: '';
+      top: 0;
+      right: -23px;
+      width: 67px;
+      height: 67px;
+      background-image: url('../images/icons/arrow_big.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0;
+    }
+  }
+  &__btn-inner:hover{
+    .assortment__btn::after{
+      opacity: 1;
+    }
+  }
+}
 
 
 

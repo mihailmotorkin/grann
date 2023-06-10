@@ -13,20 +13,21 @@ $btn-bg: #F5EEE0;
   font-weight: 700;
 }
 %jeff-400 {
-  font-family: 'Jeff Script';
+  font-family: 'Jeff Script', sans-serif;
   font-weight: 400;
 }
 %moniqa-900 {
-  font-family: 'Moniqa-BlackDisplay';
+  font-family: 'Moniqa-BlackDisplay', sans-serif;
   font-weight: 900;
 }
 
 %btn {
+  height: 67px;
   color: $default;
   text-transform: uppercase;
-  padding: 19px;
   background-color: $btn-bg;
   border-radius: 10px;
+  border: none;
   cursor: pointer;
 }
 
