@@ -140,6 +140,7 @@
     width: 276px;
     @extend %btn;
     padding: 19px;
+    transition: all .3s;
     position: relative;
     &::after{
       position: absolute;
@@ -494,12 +495,45 @@
 
 
 
-
-.breadcrumbs__link{
-  @extend %body-font;
-  font-size: 24px;
-  color: red;
+.catalog{
+  &__title{
+    @extend %title;
+    margin-bottom: 30px;
+  }
+  &__menu{
+    max-width: 544px;
+  }
+  .catalog__menu-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  &__menu-item{
+    margin-right: 30px;
+    padding: 10px 30px;
+    border: 1px solid $default;
+    border-radius: 100px;
+    transition: all .3s;
+    &:hover{
+      background-color: $default;
+      color: $bg;
+    }
+  }
+  &__menu-link{
+    color: inherit;
+  }
+  &__wrapper{
+    margin-bottom: 60px;
+  }
+  &__inner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
 }
+
+
 
 
 
