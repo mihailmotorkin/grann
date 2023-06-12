@@ -4,9 +4,10 @@ body {
 }
 
 body {
-  @extend %montserrat-300;
   font-size: 24px;
   line-height: 29px;
+  @extend %montserrat-300;
+  @extend %body-font;
   background-color: $bg;
   color: $default;
   display: flex;
@@ -22,3 +23,35 @@ body {
   margin: 0 auto;
   padding: 15px;
 }
+
+.major {
+  &__item {
+    max-width: 393px;
+  }
+  &__img {
+    margin-bottom: 20px;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info {
+    @extend %body-font;
+    max-width: 288px;
+  }
+  &__title {
+    @extend %montserrat-300;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 10px;
+  }
+  &__price {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  &__link {
+    width: 30px;
+    height: 30px;
+  }
+}
+

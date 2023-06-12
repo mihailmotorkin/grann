@@ -8,6 +8,10 @@ $btn-bg: #F5EEE0;
   font-family: 'Montserrat-Light', sans-serif;
   font-weight: 300;
 }
+%body-font {
+  font-family: 'Montserrat-Light', sans-serif;
+  font-weight: 300;
+}
 %montserrat-700 {
   font-family: 'Montserrat-Bold', sans-serif;
   font-weight: 700;
@@ -36,4 +40,5 @@ $btn-bg: #F5EEE0;
   font-size: 100px;
   line-height: 104px;
   color: $default;
+  text-align: center;
 }

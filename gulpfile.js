@@ -66,7 +66,10 @@ function sprite() {
 
 function styles() {
   return src('app/scss/style.scss')
-  .pipe(autoprefixer({overrideBrowserslist: ['last 10 version']})) 
+  .pipe(autoprefixer({
+    overrideBrowserslist: ['last 10 version'],
+    grid: true
+  })) 
   .pipe(concat('style.min.css'))
   .pipe(scss({outputStyle: 'compressed'}))
   .pipe(dest('app/css'))
@@ -75,6 +78,8 @@ function styles() {
 
 function scripts() {
   return src([
+    'node_modules/jquery/dist/jquery.js',
+    'node_modules/slick-carousel/slick/slick.js',
     'app/js/main.js'
   ])
   .pipe(concat('main.min.js'))
