@@ -24,7 +24,7 @@ body {
   padding: 15px;
 }
 
-.container-cart {
+.container-popup {
   max-width: 1085px;
   margin: 0 auto;
   padding: 15px;
@@ -34,6 +34,39 @@ body {
   &__item {
     max-width: 393px;
   }
+
+
+  &__item-box{
+    position: relative;
+    &:hover{
+      .major__item-link{
+        opacity: 1;
+      }
+    }
+  }
+  &__item-link{
+    position: absolute;
+    height: 67px;
+    width: 276px;
+    left: 0;
+    right: 0;
+    top: 50%;
+    bottom: 0;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $default;
+    text-transform: uppercase;
+    background-color: $btn-bg;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+  }
+
+
   &__img {
     margin-bottom: 20px;
   }

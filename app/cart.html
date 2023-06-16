@@ -1,0 +1,483 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head> 
+  <body>
+    
+    <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <div class="menu__inner" id="top">
+          
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__item-link" href="#bestsellers">
+                  Бестселлери
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__item-link" href="categories.html">
+                  Каталог
+                </a>
+              </li>
+            </ul>
+          </nav>
+    
+          <a class="menu__logo-link" href="#">
+            <img class="menu__logo-img" src="images/icons/logo_header.svg" alt="logo img">
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__item-link" href="#delivery">
+                  Доставка
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__item-link" href="#about">
+                  Про мене
+                </a>
+              </li>
+            </ul>
+    
+            <button class="menu__btn">
+              <img class="menu__btn-img" src="images/icons/burger.svg" alt="menu btn">
+              <img class="menu__btn-img" src="images/icons/burger_close.svg" alt="menu btn">
+            </button>
+            <div class="menu-burger__box">
+              
+              <ul class="menu-burger__list">
+                <li class="menu-burger__item">
+                  <a class="menu-burger__link" href="">
+                  Бестселлери
+                </a>
+                </li>
+                <li class="menu-burger__item">
+                  <a class="menu-burger__link" href="">
+                    Каталог
+                </a>  
+                </li>
+                <li class="menu-burger__item">
+                  <a class="menu-burger__link" href="">
+                    Доставка
+                </a>
+                </li>
+                <li class="menu-burger__item">
+                  <a class="menu-burger__link" href="">
+                    Про мене
+                </a>
+                </li>
+              </ul>
+    
+              <img class="menu-burger__img" src="images/burger_img.png" alt="image">
+              
+            </div>
+    
+            <a class="menu__shopping-cart" href="#" data-fancybox data-src="#dialog-content">
+              <img src="images/icons/shopping_cart.svg" alt="cart img">
+            </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    </header>
+
+
+    <main class="main">
+      
+      <div class="container">
+
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="index.html">
+                Головна
+              </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                Продовжити покупки
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <section class="cart">
+          <h2 class="cart__title">
+            Оформлення замовлення
+          </h2>
+          <div class="cart__wrapper">
+            <form class="cart-form" action="#">
+              <div class="cart-form__contacts">
+                <h4 class="cart-form__contacts-title">
+                  Контакти:
+                </h4>
+                <label class="cart-form__contacts-label" for="name">
+                  <input class="cart-form__contacts-input" type="text" placeholder="Ім’я">
+                </label>
+                <label class="cart-form__contacts-label" for="tel">
+                  <input class="cart-form__contacts-input" type="tel" placeholder="Номер телефону">
+                </label>
+                <label class="cart-form__contacts-label" for="email">
+                  <input class="cart-form__contacts-input" type="email" placeholder="E-mail">
+                </label>
+                <label class="cart-form__contacts-label" for="date">
+                  <input class="cart-form__contacts-input" type="date" placeholder="Дата доставки">
+                </label>
+              </div>
+
+              <div class="cart-form__delivery">
+                <h4 class="cart-form__delivery-title">
+                  Спосіб доставки
+                </h4>
+                <label class="cart-form__label"> 
+                  <div class="cart-form__box">
+                    <input class="cart-form__input" type="radio" name="delivery" checked>
+                    <span class="cart-form__radio"></span>
+                  </div>
+                  <span class="cart-form__text">Самовивіз з Печерського р-ну, м. Київ.</span>
+                </label>
+                <label class="cart-form__label">
+                  <div class="cart-form__box">
+                    <input class="cart-form__input" type="radio" name="delivery" checked>
+                    <span class="cart-form__radio"></span>
+                  </div>
+                  <span class="cart-form__text">На таксі (за тарифами служби таксі)</span>
+                </label>
+              </div>
+              <div class="cart-form__adress">
+                <label class="cart-form__adress-label" for="city">
+                  <select class="cart-form__adress-select" name="category" >
+                    <option value="city">
+                      Київ  
+                    </option>
+                    <option value="city">
+                      Одесса
+                    </option>
+                    <option value="city">
+                      Харкiв
+                    </option>
+                    <option value="city">
+                      Лвiв  
+                    </option>
+                    <option value="city">
+                      Суми
+                    </option>
+                    <option value="city">
+                      Днiпро
+                    </option>
+                  </select>
+                </label>
+                <div class="cart-form__adress-iner">
+                  <div class="cart-form__adress-box">
+                    <label class="cart-form__adres-label">
+                      <input class="cart-form__adres-input" type="text" placeholder="Вулиця">
+                    </label>
+                    <label class="cart-form__adres-label">
+                      <input class="cart-form__adres-input" type="text" placeholder="Під’їзд">
+                    </label>
+                    <label class="cart-form__adres-label">
+                      <input class="cart-form__adres-input" type="text" placeholder="Квартира">
+                    </label>
+                  </div>
+                  <div class="cart-form__adress-box">
+                    <label class="cart-form__adres-label">
+                      <input class="cart-form__adres-input" type="text" placeholder="Будинок">
+                    </label>
+                    <label class="cart-form__adres-label">
+                      <input class="cart-form__adres-input" type="text" placeholder="Корпус">
+                    </label>
+                    <label class="cart-form__adres-label">
+                      <input class="cart-form__adres-input" type="text" placeholder="Поверх">
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-form__payment">
+                <h4 class="cart-form__payment-title">
+                  Спосіб оплати
+                </h4>
+                <label class="cart-form__label">
+                  <div class="cart-form__box">
+                    <input class="cart-form__input" type="radio" name="payment" checked>
+                    <span class="cart-form__radio"></span>
+                  </div>
+                  <span class="cart-form__text">Готівка</span>
+                </label>
+                <label class="cart-form__label">
+                  <div class="cart-form__box">
+                    <input class="cart-form__input" type="radio" name="payment">
+                    <span class="cart-form__radio"></span>
+                  </div>
+                  <span class="cart-form__text">Liqpay</span>
+                </label>
+                <label class="cart-form__payment-label">
+                  <textarea class="cart-form__payment-textarea" placeholder="Додати коментар"></textarea>
+                </label>
+              </div>
+              <div class="cart-form__totalpay">
+                <h5 class="cart-form__totalpay-title">
+                  Всього до сплати:
+                </h5>
+                <p class="cart-form__totalpay-sum">
+                  750 грн
+                </p>
+              </div>
+              <button class="cart-form__btn" type="submit" data-fancybox data-src="#dialog-thanks">Оформити замовлення</button>
+            </form>
+            <div class="cart__result">
+              <h5 class="cart__result-title">
+                Ваше замовлення:
+              </h5>
+              <div class="cart__result-wrapper">
+                <div class="cart__result-name">Торт “Наполеон”</div>
+                <div class="cart__result-inner">
+                  <div class="cart__result-sum">750 грн</div>
+                  <div class="cart__result-cancel">
+                    <img src="images/icons/cancel.svg" alt="cancel img">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+      </div>
+
+      <div class="container-popup" id="dialog-content">
+        <div class="top-popup">
+          <div class="top-popup__text">
+            Ваше замовлення:
+          </div>
+          <div class="top-popup__close">
+            <a class="top-popup__link" href="#">
+              <img src="images/icons/close.svg" alt="x img">
+            </a>
+          </div>
+        </div>
+        <div class="popup__wrapper">
+          <div class="popup__description">
+            <img class="popup__description-img" src="images/cart/1.jpg" alt="cake img">
+            <div class="popup__description-inner">
+              <h4 class="popup__description-title">
+                Торт “Наполеон”
+              </h4>
+              <ul class="popup__description-list">
+                <li class="popup__description-item">
+                  <p class="popup__description-type">
+                    Вид:
+                  </p>
+                  <p class="popup__description-content">
+                    Карамельний наполеон
+                  </p>
+                </li>
+                <li class="popup__description-item">
+                  <p class="popup__description-type">
+                    Декор:
+                  </p>
+                  <p class="popup__description-content">
+                    Без декору
+                  </p>
+                </li>
+                <li class="popup__description-item">
+                  <p class="popup__description-type">
+                    Вага:
+                  </p>
+                  <p class="popup__description-content">
+                    1 кг
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="popup__order">
+            <h4 class="popup__order-title">
+              Ваше замовлення:
+            </h4>
+            <ul class="popup__order-list">
+              <li class="popup__order-item">
+                <p class="popup__order-sum">
+                  Сума замовлення:
+                </p>
+                <p class="popup__order-num">
+                  750 грн
+                </p>
+              </li>
+              <li class="popup__order-item">
+                <p class="popup__order-sum">
+                  Загальна сума:
+                </p>
+                <p class="popup__order-num">
+                  750 грн
+                </p>
+              </li>
+            </ul>
+            <button class="popup__order-btn" type="submit">
+              Оформити
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="thanks" id="dialog-thanks">
+        <div class="container">
+      
+          <img class="thanks__img-cake" src="images/thanks.png" alt="thanks image">
+      
+          <h2 class="thanks__title">
+            Дякую за замовлення!
+          </h2>
+      
+          <p class="thanks__text">
+            Ваше замовлення прийняте в обробку та незабаром вам зателефонує менеджер для уточнення деталей
+          </p>
+      
+          <div class="thanks__link-box">
+            <a class="thanks__link-main" href="index.html">
+              На головну
+            </a>
+            <a class="thanks__link-continue" href="categories.html">
+              продовжити покупки
+            </a>
+          </div>
+      
+        </div>
+      
+      </div>
+
+
+    
+    </main>
+
+
+    <footer class="footer">
+
+
+      <div class="container">
+
+
+        <div class="footer__inner">
+
+
+          <div class="footer__contacts">
+
+
+            <a class="footer__adress" href="#">с. Хотів, вул. Партизанська 1А</a>
+
+
+            <a class="footer__email" href="mailto:kostromaganna@gmail.com">Email: kostromaganna@gmail.com</a>
+
+
+            <a class="footer__phone" href="tel:+380999876240">Tel: +38(099) 987 62 40</a>
+
+
+          </div>
+
+
+          <a class="footer__logo" href="#top">
+
+
+            <img src="images/src/icons/logo_footer.svg" alt="logo footer">
+
+
+          </a>
+
+
+          <div class="footer__social">
+
+
+            <ul class="footer__social-list">
+
+
+              <li class="footer__social-item">
+
+
+                <a class="footer__social-link" href="#">
+
+
+                  <img class="footer__social-img" src="images/icons/footer_instagram.svg" alt="">
+
+
+                </a>
+
+
+              </li>
+
+
+              <li class="footer__social-item">
+
+
+                <a class="footer__social-link" href="#">
+
+
+                  <img class="footer__social-img" src="images/icons/footer_telegram.svg" alt="">
+
+
+                </a>
+
+
+              </li>
+
+
+              <li class="footer__social-item">
+
+
+                <a class="footer__social-link" href="#">
+
+
+                  <img class="footer__social-img" src="images/icons/footer_whatsapp.svg" alt="">
+
+
+                </a>
+
+
+              </li>
+
+
+            </ul>
+
+
+            <div class="footer__privacy">
+
+
+              <p class="footer__privacy-text">Політика конфіденційності</p>
+
+
+              <p class="footer__privacy-text">Договір оферти</p>
+
+
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+
+    </footer>
+
+
+    
+
+
+    <script src="js/main.min.js"></script>
+
+
+    </body>
+
+
+    
+
+
+    </html>

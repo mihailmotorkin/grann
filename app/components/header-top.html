@@ -1,15 +1,16 @@
 <div class="header-top">
   <div class="container">
-    <div class="menu__inner">
+    <div class="menu__inner" id="top">
+      
       <nav class="menu">
         <ul class="menu__list">
           <li class="menu__item">
-            <a class="menu__item-link" href="#">
+            <a class="menu__item-link" href="#bestsellers">
               Бестселлери
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__item-link" href="#">
+            <a class="menu__item-link" href="categories.html">
               Каталог
             </a>
           </li>
@@ -22,17 +23,51 @@
       <nav class="menu">
         <ul class="menu__list">
           <li class="menu__item">
-            <a class="menu__item-link" href="#">
+            <a class="menu__item-link" href="#delivery">
               Доставка
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__item-link" href="#">
+            <a class="menu__item-link" href="#about">
               Про мене
             </a>
           </li>
         </ul>
-        <a class="menu__shopping-cart" href="#">
+
+        <button class="menu__btn">
+          <img class="menu__btn-img" src="images/icons/burger.svg" alt="menu btn">
+          <img class="menu__btn-img" src="images/icons/burger_close.svg" alt="menu btn">
+        </button>
+        <div class="menu-burger__box">
+          
+          <ul class="menu-burger__list">
+            <li class="menu-burger__item">
+              <a class="menu-burger__link" href="">
+              Бестселлери
+            </a>
+            </li>
+            <li class="menu-burger__item">
+              <a class="menu-burger__link" href="">
+                Каталог
+            </a>  
+            </li>
+            <li class="menu-burger__item">
+              <a class="menu-burger__link" href="">
+                Доставка
+            </a>
+            </li>
+            <li class="menu-burger__item">
+              <a class="menu-burger__link" href="">
+                Про мене
+            </a>
+            </li>
+          </ul>
+
+          <img class="menu-burger__img" src="images/burger_img.png" alt="image">
+          
+        </div>
+
+        <a class="menu__shopping-cart" href="#" data-fancybox data-src="#dialog-content">
           <img src="images/icons/shopping_cart.svg" alt="cart img">
         </a>
       </nav>

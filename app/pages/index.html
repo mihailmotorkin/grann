@@ -62,14 +62,19 @@
         </div>
       </div>
     
-      <section class="bestsellers">
+      <section class="bestsellers" id="bestsellers">
         <div class="container">
           <h2 class="bestsellers__title">
             Бестселлери
           </h2>
           <div class="bestsellers-slider">
             <div class="major__item">
-              <img class="major__img" src="images/slider/1.jpg" alt="slider img">
+              <div class="major__item-box">
+                <img class="major__img" src="images/slider/1.jpg" alt="slider img">
+                <a class="major__item-link" href="#">
+                  Детальніше
+                </a>
+              </div>
               <div class="major__content">
                 <div class="major__info">
                   <h5 class="major__title">
@@ -85,7 +90,12 @@
               </div>
             </div>
             <div class="major__item">
-              <img class="major__img" src="images/slider/2.jpg" alt="slider img">
+              <div class="major__item-box">
+                <img class="major__img" src="images/slider/2.jpg" alt="slider img">
+                <a class="major__item-link" href="#">
+                  Детальніше
+                </a>
+              </div>
               <div class="major__content">
                 <div class="major__info">
                   <h5 class="major__title">
@@ -101,7 +111,12 @@
               </div>
             </div>
             <div class="major__item">
-              <img class="major__img" src="images/slider/3.jpg" alt="slider img">
+              <div class="major__item-box">
+                <img class="major__img" src="images/slider/3.jpg" alt="slider img">
+                <a class="major__item-link" href="#">
+                  Детальніше
+                </a>
+              </div>
               <div class="major__content">
                 <div class="major__info">
                   <h5 class="major__title">
@@ -117,7 +132,12 @@
               </div>
             </div>
             <div class="major__item">
-              <img class="major__img" src="images/slider/4.jpg" alt="slider img">
+              <div class="major__item-box">
+                <img class="major__img" src="images/slider/4.jpg" alt="slider img">
+                <a class="major__item-link" href="#">
+                  Детальніше
+                </a>
+              </div>
               <div class="major__content">
                 <div class="major__info">
                   <h5 class="major__title">
@@ -133,7 +153,12 @@
               </div>
             </div>
             <div class="major__item">
-              <img class="major__img" src="images/slider/5.jpg" alt="slider img">
+              <div class="major__item-box">
+                <img class="major__img" src="images/slider/5.jpg" alt="slider img">
+                <a class="major__item-link" href="#">
+                  Детальніше
+                </a>
+              </div>
               <div class="major__content">
                 <div class="major__info">
                   <h5 class="major__title">
@@ -149,7 +174,12 @@
               </div>
             </div>
             <div class="major__item">
-              <img class="major__img" src="images/slider/6.jpg" alt="slider img">
+              <div class="major__item-box">
+                <img class="major__img" src="images/slider/6.jpg" alt="slider img">
+                <a class="major__item-link" href="#">
+                  Детальніше
+                </a>
+              </div>
               <div class="major__content">
                 <div class="major__info">
                   <h5 class="major__title">
@@ -165,7 +195,12 @@
               </div>
             </div>
             <div class="major__item">
-              <img class="major__img" src="images/slider/7.jpg" alt="slider img">
+              <div class="major__item-box">
+                <img class="major__img" src="images/slider/7.jpg" alt="slider img">
+                <a class="major__item-link" href="#">
+                  Детальніше
+                </a>
+              </div>
               <div class="major__content">
                 <div class="major__info">
                   <h5 class="major__title">
@@ -181,7 +216,12 @@
               </div>
             </div>
             <div class="major__item">
-              <img class="major__img" src="images/slider/8.jpg" alt="slider img">
+              <div class="major__item-box">
+                <img class="major__img" src="images/slider/8.jpg" alt="slider img">
+                <a class="major__item-link" href="#">
+                  Детальніше
+                </a>
+              </div>
               <div class="major__content">
                 <div class="major__info">
                   <h5 class="major__title">
@@ -197,7 +237,12 @@
               </div>
             </div>
             <div class="major__item">
-              <img class="major__img" src="images/slider/9.jpg" alt="slider img">
+              <div class="major__item-box">
+                <img class="major__img" src="images/slider/9.jpg" alt="slider img">
+                <a class="major__item-link" href="#">
+                  Детальніше
+                </a>
+              </div>
               <div class="major__content">
                 <div class="major__info">
                   <h5 class="major__title">
@@ -213,7 +258,12 @@
               </div>
             </div>
             <div class="major__item">
-              <img class="major__img" src="images/slider/10.jpg" alt="slider img">
+              <div class="major__item-box">
+                <img class="major__img" src="images/slider/10.jpg" alt="slider img">
+                <a class="major__item-link" href="#">
+                  Детальніше
+                </a>
+              </div>
               <div class="major__content">
                 <div class="major__info">
                   <h5 class="major__title">
@@ -279,7 +329,7 @@
               </ul>
             </div>
           </div>
-          <div class="delivery">
+          <div class="delivery" id="delivery">
             <h2 class="delivery__title">
               Доставка і оплата
             </h2>
@@ -316,7 +366,7 @@
         </div>
       </section>
     
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
           <div class="about__wrapper">     
             <img class="about__img" src="images/woman.jpg" alt="woman image">
@@ -448,7 +498,85 @@
         </div>
       </section>
     
+
+      <div class="container-popup" id="dialog-content">
+        <div class="top-popup">
+          <div class="top-popup__text">
+            Ваше замовлення:
+          </div>
+          <div class="top-popup__close">
+            <a class="top-popup__link" href="#">
+              <img src="images/icons/close.svg" alt="x img">
+            </a>
+          </div>
+        </div>
+        <div class="popup__wrapper">
+          <div class="popup__description">
+            <img class="popup__description-img" src="images/cart/1.jpg" alt="cake img">
+            <div class="popup__description-inner">
+              <h4 class="popup__description-title">
+                Торт “Наполеон”
+              </h4>
+              <ul class="popup__description-list">
+                <li class="popup__description-item">
+                  <p class="popup__description-type">
+                    Вид:
+                  </p>
+                  <p class="popup__description-content">
+                    Карамельний наполеон
+                  </p>
+                </li>
+                <li class="popup__description-item">
+                  <p class="popup__description-type">
+                    Декор:
+                  </p>
+                  <p class="popup__description-content">
+                    Без декору
+                  </p>
+                </li>
+                <li class="popup__description-item">
+                  <p class="popup__description-type">
+                    Вага:
+                  </p>
+                  <p class="popup__description-content">
+                    1 кг
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="popup__order">
+            <h4 class="popup__order-title">
+              Ваше замовлення:
+            </h4>
+            <ul class="popup__order-list">
+              <li class="popup__order-item">
+                <p class="popup__order-sum">
+                  Сума замовлення:
+                </p>
+                <p class="popup__order-num">
+                  750 грн
+                </p>
+              </li>
+              <li class="popup__order-item">
+                <p class="popup__order-sum">
+                  Загальна сума:
+                </p>
+                <p class="popup__order-num">
+                  750 грн
+                </p>
+              </li>
+            </ul>
+            <button class="popup__order-btn" type="submit">
+              Оформити
+            </button>
+          </div>
+        </div>
+      </div>
+
     </main>
+
+
 
 
     <!--=include footer.html -->
