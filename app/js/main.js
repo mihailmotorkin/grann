@@ -2,7 +2,18 @@ $(function(){
   $('.bestsellers-slider').slick({
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 3
+    slidesToScroll: 3,
+    responsive: [
+    {
+      breakpoint: 377,
+      settings: {
+        dots: true,
+        rows: 2,
+        slidesToScroll: 1,
+        slidesToShow: 1
+      }
+    }
+  ]
   });
 
 
@@ -12,6 +23,7 @@ $(function(){
     $p.toggleClass('questions__item-text--active');
 
   });
+
 
 
   $('.product-slider__big').slick({
@@ -52,18 +64,33 @@ $(function(){
   });
 
 
+  $('.menu__btn').on('click', function(){
+    $('.menu-burger__box').toggleClass('menu-burger__box--active')
+  });
+
+  $('.menu-burger__btn').on('click', function(){
+    $('.menu-burger__box').removeClass('menu-burger__box--active')
+  });
+
+
   // smooth scroll:
 
   $('a[href*="#"]').on('click', function() {
-  $('html, body').animate({
-    scrollTop: $($.attr(this, 'href')).offset().top
-  }, 1500);
-  return false;
+    $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+    }, 1500);
+    return false;
+  });
+
+
+  $('.instagram__slider').slick({
+    arrows: true,
+    dots: true
+  });
+
+
+
 });
-
-
-
-})
 
 
 Fancybox.bind("[data-fancybox]", {

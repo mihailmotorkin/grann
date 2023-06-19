@@ -35,7 +35,6 @@ body {
     max-width: 393px;
   }
 
-
   &__item-box{
     position: relative;
     &:hover{
@@ -129,7 +128,7 @@ body {
 
 .pagination {
   width: 188px;
-  margin: 0 auto 120px;
+  margin: 0 auto 105px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -147,4 +146,52 @@ body {
     color: inherit;
   }
 
+}
+
+
+
+
+@media (max-width: 376px){
+  .container {
+    max-width: 395px;
+    padding: 10px;
+  }
+  .container-popup {
+    max-width: 395px;
+    padding: 10px;
+  }
+  .major {
+    &__item{
+      margin-bottom: 30px;
+    }
+    &__item-link {
+      height: 67px;
+      width: 276px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &__img {
+      margin-bottom: 20px;
+    }
+    &__info {
+      max-width: 260px;
+    }
+    &__title {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &__price {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+.breadcrumbs {
+  padding-top: 20px;
+  padding-bottom: 33px;
+}
+
+.pagination{
+  margin-bottom: 90px;
+}
 }

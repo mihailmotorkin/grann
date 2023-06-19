@@ -53,6 +53,12 @@
     display: none;
     width: 375px;
     background-color: $default;
+    padding-bottom: 230px;
+  }
+  &__btn{
+    padding: 30px 20px 0 0;
+    margin-left: auto;
+    cursor: pointer;
   }
   &__item{
     @extend %montserrat-300;
@@ -74,7 +80,7 @@
 
 ul.menu-burger__list{
   padding-left: 40px;
-  padding-top: 100px;
+  padding-top: 45px;
   margin-bottom: 54px;
 }
 
@@ -202,7 +208,7 @@ ul.menu-burger__list{
 
 
 .bestsellers{
-  margin: 105px 0 162px;
+  padding: 105px 0 162px;
   &__title{
     @extend %title;
     margin-bottom: 60px;
@@ -227,22 +233,20 @@ ul.menu-burger__list{
     &:hover{
       background-color: $btn-bg;
     }
-    position: relative;
-  
   }
   .slick-prev{
     position: absolute;
-    right: 20px;
     top: -50px;
-    background-image: url('../images/icons/arrow-right.svg');
+    right: 150px;
+    background-image: url('../images/icons/arrow-left.svg');
     background-repeat: no-repeat;
     background-position: center center;
   }
   .slick-next{
     position: absolute;
+    right: 20px;
     top: -50px;
-    right: 150px;
-    background-image: url('../images/icons/arrow-left.svg');
+    background-image: url('../images/icons/arrow-right.svg');
     background-repeat: no-repeat;
     background-position: center center;
   }
@@ -338,6 +342,7 @@ ul.menu-burger__list{
     margin: 0 auto;
   }
   &__item-title{
+    text-transform: uppercase;
     font-weight: 300;
     padding-top: 30px;
   }
@@ -351,6 +356,10 @@ ul.menu-burger__list{
 
 .about{
   padding-bottom: 77px;
+  &__title{
+    @extend %title;
+    display: none;
+  }
   &__wrapper{
     display: flex;
   }
@@ -484,9 +493,7 @@ ul.menu-burger__list{
   &__item{
     margin-bottom: 40px;
   }
-  &__list-title{
-    @extend %body-font;
-    font-weight: 300;
+  &__box{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -500,6 +507,10 @@ ul.menu-burger__list{
       height: 14px;
       cursor: pointer;
     }
+  }
+  &__list-title{
+    @extend %body-font;
+    font-weight: 300;
   }
   &__item-text{
     font-size: 18px;
@@ -530,6 +541,9 @@ ul.menu-burger__list{
     @extend %btn;
     width: 604px;
     margin: 0 auto;
+  }
+  &__slider{
+    display: none;
   }
 }
 
@@ -580,13 +594,14 @@ ul.menu-burger__list{
 }
 
 
-
-
-
 .product-item{
   margin-bottom: 36px;
   &__inner{
     display: flex;
+  }
+  &__inner-title{
+    @extend %montserrat-300;
+    display: none;
   }
   &__slider{
     width: 500px;
@@ -731,7 +746,7 @@ ul.menu-burger__list{
   }
   &__small{
     width: 290px;
-    padding: 0px 15px;
+    padding-left: 14px;
     margin: 0 auto;
   }
   &__small-item{
@@ -983,6 +998,7 @@ ul.menu-burger__list{
     font-weight: 300;
   }
   &__contacts-input{
+    @extend %montserrat-300;
     margin-bottom: 30px;
     background-color: $btn-bg;
     border: none;
@@ -1019,12 +1035,12 @@ ul.menu-burger__list{
     font-size: 18px;
     line-height: 22px;
   }
-  &__adress-iner{
+  &__adress-inner{
     display: flex;
     justify-content: space-between;
     padding-bottom: 20px;
   }
-  &__adres-input{
+  &__adress-input{
     display: block;
     width: 182px;
     margin-bottom: 20px;
@@ -1049,7 +1065,6 @@ ul.menu-burger__list{
     color: #161616;
     font-size: 18px;
     line-height: 23px;
-    
   }
 
   &__input{
@@ -1087,7 +1102,6 @@ ul.menu-burger__list{
   &__payment-textarea{
     display: block;
     background-color: $btn-bg;
-    padding-top: 10px;
     border: none;
     border-radius: 10px;
     resize: none;
@@ -1123,7 +1137,6 @@ ul.menu-burger__list{
 .thanks{
   display: none;
   padding: 45px 0 100px;
-  
   &__img-cake{
     margin: 0 auto;
     margin-bottom: 20px;
@@ -1167,13 +1180,9 @@ ul.menu-burger__list{
 }
 
 
-
-
 .container-popup{
   display: none;
-  width: 1236px;
 }
-
 
 
 
