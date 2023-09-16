@@ -219,6 +219,9 @@ ul.menu-burger__list{
     display: block;
     margin: 88px auto 0;
   }
+  &__btn-link{
+    color: inhearit;
+  }
 }
 
 .bestsellers-slider{
@@ -541,6 +544,9 @@ ul.menu-burger__list{
     @extend %btn;
     width: 604px;
     margin: 0 auto;
+  }
+  &__btn-link{
+    color: inherit;
   }
   &__slider{
     display: none;
